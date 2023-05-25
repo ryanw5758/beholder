@@ -1,9 +1,10 @@
 import React from "react";
 import { FreeCamera, Vector3, HemisphericLight, MeshBuilder } from "@babylonjs/core";
-import * as GUI from "babylonjs-gui"
 import SceneComp from "@/components/SceneComp";
 import Navbar from "@/components/navbar/Nav";
+import Sidebar from "@/components/mainElements/sidebarComp";
 
+// added from Babylon.js React documentation
 
 let box: any;
 
@@ -51,7 +52,8 @@ export default function BabylonTest() {
   return (
     <main className = "flex min-h-screen flex-col items-center justify-between p-24">
       <Navbar />
-      <div>
+      <Sidebar className = "sidebar"/>
+      <div className = "mainScene">
         {
           <SceneComp antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
         }
