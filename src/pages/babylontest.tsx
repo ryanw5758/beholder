@@ -3,6 +3,7 @@ import { FreeCamera, Vector3, HemisphericLight, MeshBuilder } from "@babylonjs/c
 import SceneComp from "@/components/SceneComp";
 import Navbar from "@/components/navbar/Nav";
 import Sidebar from "@/components/mainElements/sidebarComp";
+import Lobby from "@/components/mainElements/lobbyComp";
 
 // added from Babylon.js React documentation
 
@@ -58,6 +59,7 @@ export default function BabylonTest() {
           <SceneComp antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
         }
       </div>
+      <Lobby className = "lobby"/>
     </main>
   );
 };
