@@ -19,13 +19,8 @@ export default function Navbar() {
                 link = "#"
                 className = "navButton"
             />
-            <NavButton 
-                buttonName= "To Battle"
-                link = "/battlepage"
-                className = "navButton"
-            />
             <NavButton
-                buttonName = "Babylon Test"
+                buttonName = "Battle"
                 link = "/babylontest"
                 className = "navButton"
             />

@@ -14,9 +14,6 @@ let onClick = () => {
 export default function Sidebar(props: SidebarProps) {
     return(
         <div className={props.className}>
-            <h1 className={spectral.className}>
-                Sidebar Here
-            </h1>
             <ul className={spectral.className}>
                 <li>
                     - Element 1 <br />

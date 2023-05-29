@@ -28,18 +28,24 @@ body {
 
 .navButton {
   background-color: aquamarine;
-  border-style: inset;
-  border-width: 10px;
+  border-style: ridge;
+  border-width: 5px;
   display: inline-block;
   margin: auto;
 }
 
+.navButton:hover {
+  background: #4E6C50;
+  transition-duration: 0.5s;
+}
+
 .navBar {
   position: absolute;
-  top: 25px;
+  top: 0px;
   text-align: center;
   margin: auto;
-  background-color: white;
+  width: 100%;
+  background-color: #820000;
 }
 
 .battleMap {
